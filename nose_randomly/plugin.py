@@ -38,7 +38,7 @@ class RandomlyPlugin(Plugin):
         super(RandomlyPlugin, self).options(parser, env)
         parser.add_option(
             str('--randomly-seed'), action='store', dest='seed',
-            default=int(time.time()), type=int,
+            default=int(time.time()),
             help="""Set the seed that nose-randomly uses. Default behaviour:
                     use time.time()"""
         )
